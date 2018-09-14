@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        
+        <div id="content_upd">
+            <h3>Update Tourist Place</h3>
+
+            <div class="row">
+                <label for="name:">Name:</label>
+                <input type="text" id="unam">
+            </div>
+
+            <div class="row">
+                <label for="address">Address:</label>
+                <input type="text" id="uadd">
+            </div>
+
+            <div class="row">
+                <label for="rating">Rating:</label>
+                <input type="number" min="1" max="5" id="urat">
+            </div>
+
+            <div class="row">
+                <Label for="picture">Picture</Label>
+                <input type="file" id="ufiles" name="files">
+            </div>
+
+            <div class="btn">
+                <button type="button" class="b1" id="updBtn">Submit</button>
+                <button type="button" class="b2 action-reset">Reset</button>
+            </div>
+            
+            <div class="link action-link-show">
+                <a href="">Back To Tourist Place List</a>
+            </div>
+    
+        </div>
+        
+        <div id="content_add">
+            <h3>Add a new Tourist Place</h3>
+
+            <div class="row">
+                <label for="name:">Name:</label>
+                <input type="text" id="inam">
+            </div>
+
+            <div class="row">
+                <label for="address">Address:</label>
+                <input type="text" id="iadd">
+            </div>
+
+            <div class="row">
+                <label for="rating">Rating:</label>
+                <input type="number" min="1" max="5" id="irat">
+            </div>
+
+            <div class="row">
+                <Label for="picture">Picture</Label>
+                <input type="file" id="files" name="files">
+            </div>
+
+            <div class="btn">
+                <button type="button" class="b1 action-submit-add">Submit</button>
+                <button type="button" class="b2 action-reset">Reset</button>
+            </div>
+            
+            <div class="link action-link-show">
+                <a href="">Back To Tourist Place List</a>
+            </div>
+    
+        </div>
+        
+        <div id="content_view">
+            <div class="row">
+                <input type="text" id="id-search" class="class-search-box" placeholder="Enter name to search..">
+            </div>
+
+            <div class="row">
+                <table class="class-table-element">
+                    <thead>
+                        <tr>
+                            <th class="class-name">NAME</th>
+                            <th class="class-address">ADDRESS</th>
+                            <th class="class-rating">RATING</th>
+                            <th class="class-picture">PICTURE</th>
+                            <th class="class-action">ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="id-table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <button class="blu action-add" type="button">Create New Tourist Place</button>
+            </div>
+
+        </div>
+
+        
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        
+		<script src="src.js"></script>
+    </body>
+</html>
